@@ -10,7 +10,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
   const isProductionBuild = argv.mode === "production";
-  const publicPath = "/docs";
+  const publicPath = "/gh-pages";
 
   const pcss = {
     test: /\.(p|post|)css$/,
@@ -90,7 +90,7 @@ module.exports = (env, argv) => {
       admin: "./src/admin/main.js",
     },
     output: {
-      path: path.resolve(__dirname, "./docs"),
+      path: path.resolve(__dirname, "./dist"),
       filename: "[name].[hash].build.js",
       publicPath: isProductionBuild ? publicPath : "",
       chunkFilename: "[chunkhash].js",
