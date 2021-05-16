@@ -1,0 +1,15 @@
+section.section-experience
+  .container 
+    .section-experience__skills
+      .section-experience__shape
+      .section-experience__skills-values
+        h2.section-experience__title Чем я могу быть полезен вам
+        p.section-experience__texts Этот сайт я сделал в рамках обучения в школе онлайн образования Loftschool. Чуть позже я освежу в нем контент. А пока посмотрите, как тут все классно и красиво!
+        include ../skills/skills
+    h2.section-experience__title.section-experience__title--left Мои работы
+    include ../slider/slider
+  .triangles.triangles--bottom
+    svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangles__shape.triangles__shape_left
+      polygon(points="0,0 1000,0 1000,100")
+    svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangles__shape.triangles__shape_right
+      polygon(points="0,0 0,100 1000,0")

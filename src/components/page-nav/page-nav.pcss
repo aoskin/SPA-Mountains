@@ -1,0 +1,30 @@
+.page-nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 60px;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &::after {
+      display: block;
+      content: "";
+      border-bottom: 1px solid;
+      width: 0;
+      transition: width .6s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  
+
+}

@@ -5,5 +5,10 @@
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
   "bp-tablets": "768px",
-  "bp-phones": "480px"
+  "bp-phones": "480px",
+  "dark-color": "#464E62",
+  "dark-grey-color": "#252830",
+  "light-grey-color": "#717883",
+  "link-color": "#586ED3"
+  
 }

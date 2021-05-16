@@ -5,3 +5,18 @@ mixin icon(name, className)
 
 mixin image(path, className)
   img(src=require(`images/${path}`).default class=className)
+
+mixin nav(className, items, activeItem)
+  nav(class=`${className}`)
+    ul(class=`${className}__list`)
+      each item, ndx in items 
+        li(class=`${className}__item ` + ( (ndx === activeItem) ? `${className}__item--active` : '' ))
+          a(class=`${className}__link` href='#')= item
+
+mixin socials(mod)
+  ul(class='socials socials--' + mod)
+    -var items = [{name: 'insta', href: '#'}, {name: 'vk', href: '#'}, {name: 'github', href: '#'}, {name: 'envelope', href: '#'}];
+    each item in items
+     li(class='socials__item socials__item--' + mod)
+        a(href=item.href).socials__link
+          +icon(`${item.name}`, 'socials__icon socials__icon--' + mod)

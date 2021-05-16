@@ -1,0 +1,45 @@
+.control-btn {
+
+    height: 53px;
+    width: 53px;
+    fill: $light-grey-color;
+
+    &[disabled] {
+      opacity: .5;
+      cursor: auto;
+
+      &:hover svg {
+        margin-left: 0;
+      }
+    }
+
+    svg {
+      width: 10.12px;
+      height: 11.37px;
+    }
+    
+    &--preview-next {
+      transform: rotate(90deg);
+    }
+
+    &--preview-prev {
+      transform: rotate(270deg);
+    }
+    
+    &--review-prev {
+      transform: rotate(180deg);
+      border: 2px solid $light-grey-color;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    &--review-next {
+      border: 2px solid $light-grey-color;
+      border-radius: 50%;
+    }
+
+    &:hover svg {
+      margin-left: 5px;
+    }
+
+
+}

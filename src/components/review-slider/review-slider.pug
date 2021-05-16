@@ -1,0 +1,21 @@
+section.review-slider
+  .container
+    .review-slider__header
+      h2 Что обо мне говорят
+      .review-slider__controls
+        button(type="button").control-btn.control-btn--review-prev
+          +icon('arrow', 'control-btn__icon')
+        button(type="button").control-btn.control-btn--review-next
+          +icon('arrow', 'control-btn__icon')
+    .review-slider__items
+      ul.review-cards
+        - var cards = [{desc: "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!", img: "1", fio: "Ковальчук Дмитрий", prof: "Основатель Loftschool"}, {desc: "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!", img: "2", fio: "Владимир Сабанцев", prof: "Преподаватель"}]
+          each card in cards
+            li.review-card
+              p.review-card__text= card.desc
+                +icon('quote', 'review-card__icon')
+              .review-card__user
+                +image(`content/review/user-${card.img}.png`, 'review-card__user-img')
+                .review-card__user-info
+                  p.review-card__user-fullname= card.fio
+                  p.review-card__user-prof= card.prof

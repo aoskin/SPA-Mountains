@@ -1,0 +1,16 @@
+footer.page-footer
+  .container.page-footer__container
+    .page-footer__left
+      p.page-footer__copyright &copy; 2021
+      p.page-footer__dev Андрей Оськин
+      p Личный сайт веб-разработчика
+    .page-footer__right
+      .page-footer__nav
+        +nav('page-nav', ["Обо мне", "Навыки", "Работы", "Отзывы"], 0)
+      .page-footer__content 
+        .page-footer__block
+          p.page-footer__text Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool
+          +socials ('footer')
+        .page-footer__block
+          p.page-footer__text Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
+          p.page-footer__author Martin Golding

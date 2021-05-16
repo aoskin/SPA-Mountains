@@ -10,6 +10,10 @@ html(lang="en")
   body
     .wrapper
       .maincontent
-        +image('content/user.jpg', 'user-pic')
-        +icon('link', 'link-class')
-        .icon-bg
+        include /components/section-hero/section-hero
+        include /components/section-experience/section-experience
+        include /components/review-slider/review-slider
+        include /components/page-footer/page-footer
+        //- +image('content/user.jpg', 'user-pic')
+        //- +icon('link', 'link-class')
+        //- .icon-bg
