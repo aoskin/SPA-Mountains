@@ -11,12 +11,17 @@
   &__link {
     text-decoration: none;
 
+    &:hover {
+      color: $accent-color;
+    }
+
     &::after {
       display: block;
       content: "";
-      border-bottom: 1px solid;
+      border-bottom: 1px solid $accent-color;;
       width: 0;
       transition: width .6s;
+      padding-bottom: 10px;
     }
 
     &:hover {
