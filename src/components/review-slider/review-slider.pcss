@@ -12,9 +12,20 @@
     font-weight: 700;
     padding-bottom: 78px;
     margin-right: 118px;
+
+    @include phones {
+      margin-right: 30px;
+    }
   }
 
   &__items {
     width: 80%;
+  }
+
+  &__controls {
+
+    @include phones {
+      display: flex;
+    }
   }
 }

@@ -6,6 +6,10 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__left {
@@ -28,10 +32,25 @@
   &__nav {
     color: #fff;
     margin-bottom: 48px;
+
+    .page-nav {
+      display: flex;
+    }
+
+    @include phones {
+      .page-nav__list {
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+    }
   }
 
   &__content {
     display: flex;
+    
+    @include tablets {
+      flex-direction: column;
+    }
   }
 
   &__block:first-child {

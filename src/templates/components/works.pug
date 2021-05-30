@@ -1,0 +1,61 @@
+script(type="text/x-template")#slider-container
+  .slider 
+    .slider-preview
+      preview(
+        :currentSlide = "currentSlide",
+        :works = "works",
+        :currentIndex = "currentIndex",
+        @changeSlide = "changeSlide"
+      )
+      info(
+        :currentSlide = "currentSlide"
+      )
+
+script(type="text/x-template")#slider-preview
+  .slider-preview__images(:data-slide="currentIndex + 1")
+    img(:src="currentSlide.photo").slider-preview__image
+    .slider-preview__thumbs 
+      thumbs(
+        :works = "reversedSlides",
+        :currentSlide = "currentSlide"
+      )
+    btns(
+      @changeSlide = "$emit('changeSlide', $event)"
+    )
+
+script(type="text/x-template")#slider-thumbs
+  ul.slider-thumbs
+    li.slider-thumbs__item(
+      v-for="slide in works" :key="slide.id"
+      :class="{active: currentSlide.id === slide.id}"
+      )
+      button.slider-thumbs__link
+        img(:src="slide.photo").slider-thumb
+        
+script(type="text/x-template")#slider-btns
+  .slider-preview__btns
+    button(
+      type="button"
+      @click="$emit('changeSlide', 'next')"
+      ).control-btn.control-btn--preview-prev
+      +icon('arrow', 'control-btn__icon')
+    button(
+      type="button"
+      @click="$emit('changeSlide', 'prev')"
+      ).control-btn.control-btn--preview-next
+      +icon('arrow', 'control-btn__icon')
+
+script(type="text/x-template")#slider-info
+  .slider-preview__info
+    .slider-preview__tags
+      tags(
+        :tags="tagsArray"
+      )
+    .slider-preview__title {{currentSlide.title}}
+    .slider-preview__description {{currentSlide.description}}
+    a(:href="currentSlide.link" target="_blank").slider-link Посмотреть сайт
+      +icon('link', 'slider-link__icon')
+
+script(type="text/x-template")#slider-tags
+  .slider-tags 
+    button.slider-tag(v-for="tag in tags") {{tag}}

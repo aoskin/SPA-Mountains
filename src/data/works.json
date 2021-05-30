@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "1 Сайт школы образования",
+    "skills": "1 html, Css, Javascrpt",
+    "photo": "slides/slide-1.png",
+    "link": "//google.com",
+    "description": "1 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": "2",
+    "title": "2 Сайт школы образования",
+    "skills": "2 html, Css, Javascrpt",
+    "photo": "slides/slide-2.png",
+    "link": "//yandex.ru",
+    "description": "2 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": "3",
+    "title": "3 Сайт школы образования",
+    "skills": "3 html, Css, Javascrpt",
+    "photo": "slides/slide-3.png",
+    "link": "//rambler.ru",
+    "description": "3 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": "4",
+    "title": "4 Сайт школы образования",
+    "skills": "4 html, Css, Javascrpt",
+    "photo": "slides/slide-4.png",
+    "link": "//loftschool.ru",
+    "description": "4 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": "5",
+    "title": "5 Сайт школы образования",
+    "skills": "5 html, Css, Javascrpt",
+    "photo": "slides/slide-5.png",
+    "link": "//mail.ru",
+    "description": "5 Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  }
+]

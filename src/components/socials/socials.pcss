@@ -12,4 +12,26 @@
     }
   }
 
+  &--mobile {
+    display: none;
+  }
+
+  @include tablets {
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 88px;
+  }
+
+  @include phones {
+    margin-right: 0;
+  }
+
+  &--footer {
+    @include tablets {
+      justify-content: flex-start;
+      margin-bottom: 30px;
+    }
+
+  }
+
 }
