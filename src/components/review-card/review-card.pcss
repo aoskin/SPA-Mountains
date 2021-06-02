@@ -8,6 +8,10 @@
     margin-right: 23px;
     width: 26%;
     height: 55px;
+
+    @include phones {
+      display: none;
+    }
   }
 
   &__text {
@@ -38,6 +42,10 @@
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 12px;
+
+      @include phones {
+        font-size: 14px;
+      }
     }
     
     &-prof {
