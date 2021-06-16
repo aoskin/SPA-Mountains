@@ -1,0 +1,49 @@
+.navigation-component {
+  font-size: 16px;
+  font-weight: 600;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 30px 0;
+        
+    &:hover {
+      color: #383BCF;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #383BCF;
+      }
+    }
+    
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 30px;
+
+  }
+}
+
+.active {
+    color: #383BCF;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #383BCF;
+    }
+}
